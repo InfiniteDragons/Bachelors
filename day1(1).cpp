@@ -15,7 +15,7 @@
  {
     int a, b;
     cout<<"Enter two numbers to be added"<<endl;
-    std::cin>>a>>b;
+    cin>>a>>b;
     sum(a,b);
     return 0;
  }
