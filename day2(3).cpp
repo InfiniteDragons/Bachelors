@@ -1,3 +1,6 @@
+
+// WAP to cube an integer, float and double number.
+
 #include<iostream>
  using namespace std;
  
