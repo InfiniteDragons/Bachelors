@@ -1,3 +1,6 @@
+
+//WAP to find the largest and smallest number from an array using DMA operators new and delete.
+
 #include<iostream>
  using namespace std;
  
