@@ -131,7 +131,8 @@ def main():
         screen.fill(BLACK)
 
         # Draw Sun
-        draw_circle(screen, CENTER[0], CENTER[1], 30, YELLOW)
+        for i in range(30, 0, -1):
+            draw_circle(screen, CENTER[0], CENTER[1], i, (255, 255 - i*8, 0))
 
         # Draw orbits
         for p in planets:
@@ -139,6 +140,8 @@ def main():
 
         # Update and draw planets
         for p in planets:
+            for i in range(p.size, 0, -1):
+                draw_circle(screen, CENTER[0]+int(math.cos(p.angle)*p.rx), CENTER[1]+int(math.sin(p.angle)*p.ry), i, (p.color[0], p.color[1], p.color[2]))
             p.update()
             p.draw(screen)
 
